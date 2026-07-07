@@ -31,6 +31,30 @@ jobs:
             ruby: 2.1
           - os: windows-latest
             ruby: 2.2
+          # Run rake test
+          # ------------------------------------------
+          #  /home/runner/work/fast_excel/fast_excel/test/test_helper.rb:15:in `require_relative': /home/runner/work/fast_excel/fast_excel/lib/fast_excel.rb:545: syntax error, unexpected ')' (SyntaxError)
+          #  /home/runner/work/fast_excel/fast_excel/lib/fast_excel.rb:559: module definition in method body
+          #  /home/runner/work/fast_excel/fast_excel/lib/fast_excel.rb:590: dynamic constant assignment
+          #    ALIGN_ENUM = Libxlsxwriter.enum_type(:format_alignments)
+          #                ^
+          #  /home/runner/work/fast_excel/fast_excel/lib/fast_excel.rb:661: dynamic constant assignment
+          #    BORDER_ENUM = Libxlsxwriter.enum_type(:format_borders)
+          #                 ^
+          #  /home/runner/work/fast_excel/fast_excel/lib/fast_excel.rb:707: syntax error, unexpected keyword_end, expecting end-of-input
+          #    from /home/runner/work/fast_excel/fast_excel/test/test_helper.rb:15:in `<top (required)>'
+          #    from /home/runner/work/fast_excel/fast_excel/test/format_test.rb:1:in `require_relative'
+          #    from /home/runner/work/fast_excel/fast_excel/test/format_test.rb:1:in `<top (required)>'
+          #    from /opt/hostedtoolcache/Ruby/2.0.0-p648/x64/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+          #    from /opt/hostedtoolcache/Ruby/2.0.0-p648/x64/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+          #    from /opt/hostedtoolcache/Ruby/2.0.0-p648/x64/lib/ruby/gems/2.0.0/gems/rake-12.3.3/lib/rake/rake_test_loader.rb:17:in `block in <main>'
+          #    from /opt/hostedtoolcache/Ruby/2.0.0-p648/x64/lib/ruby/gems/2.0.0/gems/rake-12.3.3/lib/rake/rake_test_loader.rb:5:in `select'
+          #    from /opt/hostedtoolcache/Ruby/2.0.0-p648/x64/lib/ruby/gems/2.0.0/gems/rake-12.3.3/lib/rake/rake_test_loader.rb:5:in `<main>'
+          # rake aborted!
+          # Command failed with status (1)
+          # ------------------------------------------
+          - os: ubuntu-latest
+            ruby: 2.0
 
     runs-on: ${{ matrix.os }}
 
