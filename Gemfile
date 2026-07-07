@@ -11,7 +11,9 @@ gem 'minitest-reporters'
 
 
 group :benchmarks do
-  gem 'axlsx', git: 'https://github.com/randym/axlsx.git'
+  # Last version supported on Ruby 2.0 - 2.2
+  gem 'caxlsx', '~> 2.0.2'
+
   gem 'write_xlsx'
   gem 'xlsxtream'
   gem 'benchmark-ips'
