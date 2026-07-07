@@ -1,3 +1,8 @@
+
+* Add gems needed for benchmarks (in ruby 2.2)
+* Fix ruby 2.2 support
+* Backport `auto_filter arguments order corrected` from `main / master`
+
 #### Version 0.5.0 - 02 jan 2024
 
 * Support ruby 3.3
