@@ -1,0 +1,12 @@
+ruby 2.2.10p489 (2018-03-28 revision 63023) [x86_64-linux]
+Warming up --------------------------------------
+              Normal    19.000 i/100ms
+     With auto_width    16.000 i/100ms
+Calculating -------------------------------------
+              Normal    191.665 (± 2.1%) i/s    (5.22 ms/i) -      1.919k in  10.012237s
+     With auto_width    165.846 (± 1.8%) i/s    (6.03 ms/i) -      1.664k in  10.033385s
+
+Comparison:
+         Normal:      191.7 i/s
+With auto_width:      165.8 i/s - 1.16x  slower
+

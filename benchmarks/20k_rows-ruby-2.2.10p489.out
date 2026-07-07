@@ -1,0 +1,18 @@
+ruby 2.2.10p489 (2018-03-28 revision 63023) [x86_64-linux]
+Warming up --------------------------------------
+           FastExcel     1.000 i/100ms
+               Axlsx     1.000 i/100ms
+          write_xlsx     1.000 i/100ms
+           xlsxtream     1.000 i/100ms
+Calculating -------------------------------------
+           FastExcel      7.574 (± 0.0%) i/s  (132.03 ms/i) -     76.000 in  10.034554s
+               Axlsx      1.591 (± 0.0%) i/s  (628.49 ms/i) -     16.000 in  10.055763s
+          write_xlsx      1.610 (± 0.0%) i/s  (621.00 ms/i) -     17.000 in  10.557075s
+           xlsxtream      7.097 (± 0.0%) i/s  (140.90 ms/i) -     72.000 in  10.144751s
+
+Comparison:
+ FastExcel:        7.6 i/s
+ xlsxtream:        7.1 i/s - 1.07x  slower
+write_xlsx:        1.6 i/s - 4.70x  slower
+     Axlsx:        1.6 i/s - 4.76x  slower
+

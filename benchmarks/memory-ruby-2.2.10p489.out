@@ -1,0 +1,27 @@
+warm up...
+Running test: FastExcel
+PROC_MEM [pid: 11364 t: 0.367 ram: +1.230 MB] Done!
+Start MEM: 76.355 MB
+SEC: 0 : +0.094 MB
+SEC: 1 : +0.223 MB
+
+Running test: Axlsx
+PROC_MEM [pid: 11364 t: 1.626 ram: +125.605 MB] Done!
+Start MEM: 77.559 MB
+SEC: 0 : +0.031 MB
+SEC: 1 : +93.234 MB
+SEC: 2 : +123.879 MB
+
+Running test: write_xlsx
+PROC_MEM [pid: 11364 t: 1.752 ram: +53.477 MB] Done!
+Start MEM: 166.324 MB
+SEC: 0 : +0.031 MB
+SEC: 1 : +14.895 MB
+SEC: 2 : +41.707 MB
+
+Running test: xlsxtream
+PROC_MEM [pid: 11364 t: 0.423 ram: +28.277 MB] Done!
+Start MEM: 163.281 MB
+SEC: 0 : +0.039 MB
+SEC: 1 : +28.051 MB
+
