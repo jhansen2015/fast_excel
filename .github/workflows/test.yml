@@ -10,7 +10,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        # https://docs.github.com/en/actions/reference/runners/github-hosted-runners
+        # https://github.com/actions/runner-images/issues/10721
+        #os: [ubuntu-latest, ubuntu-22, ubuntu-24, macos-14, macos-15, macos-latest, windows-2022, windows-latest]
+        os:
+#          - ubuntu-latest
+#          - macos-latest
+#          - windows-latest
+          # Regressions
+          - ubuntu-24
+          - ubuntu-22
+          - ubuntu-20
+          - macos-15
+          - macos-14
+          - macos-12
+          - windows-2022
         # Quote '3.0' so 3.0 doesn't get truncated to 3
         # Ruby 3.4 removes base64, maybe bigdecimal too?
         # The main / master branch has code that supports Ruby 2.3 and newer
@@ -66,8 +80,8 @@ jobs:
           # rake aborted!
           # Command failed with status (1)
           # ------------------------------------------
-          - os: ubuntu-latest
-            ruby: 2.0
+#          - os: ubuntu-latest
+#            ruby: 2.0
 
     runs-on: ${{ matrix.os }}
 
