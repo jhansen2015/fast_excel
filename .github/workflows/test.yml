@@ -121,7 +121,7 @@ jobs:
           # ------------------------------------------
           - os: ubuntu-latest
             ruby: 2.0
-        include:
+        #include:
           # Run rake test
           #/Users/runner/work/fast_excel/fast_excel/test/test_helper.rb:15:in `require_relative': /Users/runner/work/fast_excel/fast_excel/lib/fast_excel.rb:545: syntax error, unexpected ')' (SyntaxError)
           #/Users/runner/work/fast_excel/fast_excel/lib/fast_excel.rb:559: module definition in method body
